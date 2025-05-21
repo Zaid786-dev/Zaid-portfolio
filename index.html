@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Zaid Vahora | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     :root {
       --bg: #f9f9f9;
@@ -145,6 +149,21 @@
       cursor: pointer;
     }
 
+    .social-icons {
+      margin-top: 15px;
+      font-size: 22px;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      color: var(--accent);
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--text);
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -181,7 +200,6 @@
 
   <header>
     <img src="zaid-profile.png" alt="Zaid Vahora">
-    
     <h1>Zaid Vahora</h1>
     <p>Fresher | Web Developer | Java & Python Enthusiast</p>
   </header>
@@ -219,10 +237,16 @@
           <button type="submit">Send Message</button>
         </form>
       </div>
-      <p style="margin-top:10px;">
-        GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/zaid-vahora-a6a415292/" target="_blank">Zaid Vahora</a>
-      </p>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://github.com/Zaid786-dev" target="_blank" aria-label="GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zaid-vahora-a6a415292/" target="_blank" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </section>
   </main>
 

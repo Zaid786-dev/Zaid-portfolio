@@ -1,30 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zaid Vahora | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zaid Vahora - Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
   <style>
-    :root {
-      --bg: #f9f9f9;
-      --text: #333;
-      --accent: #1f4037;
-      --light-accent: #99f2c8;
-      --card: white;
-    }
-
-    body.dark-mode {
-      --bg: #1c1c1c;
-      --text: #eee;
-      --accent: #66ffcc;
-      --light-accent: #222;
-      --card: #2a2a2a;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -32,233 +17,253 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(to right, var(--accent), var(--light-accent));
+      background-color: #0a74da;
       color: white;
+      padding: 20px 0;
       text-align: center;
-      padding: 50px 20px;
-    }
-
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      margin-bottom: 15px;
-      animation: zoomIn 1s ease-out;
     }
 
     header h1 {
-      font-size: 34px;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-size: 18px;
-      font-weight: 300;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background-color: var(--card);
-      padding: 25px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      animation: fadeIn 0.8s ease;
-    }
-
-    h2 {
-      color: var(--accent);
-      border-left: 5px solid var(--light-accent);
-      padding-left: 12px;
-      margin-bottom: 15px;
-      font-size: 22px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    li {
+      font-size: 2.5rem;
       margin-bottom: 10px;
-      padding-left: 18px;
-      position: relative;
     }
 
-    li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-weight: bold;
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin: 0 auto 15px;
+      display: block;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .dark-toggle {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      background-color: var(--light-accent);
-      border: none;
-      padding: 8px 15px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    .contact-form button {
-      background: var(--accent);
+    nav a {
       color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 10px;
-      border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .social-icons {
       margin-top: 15px;
-      font-size: 22px;
     }
 
     .social-icons a {
-      margin-right: 15px;
-      color: var(--accent);
+      color: white;
+      font-size: 1.6rem;
+      margin: 0 12px;
+      display: inline-block;
       transition: color 0.3s;
     }
 
     .social-icons a:hover {
-      color: var(--text);
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0a74da;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #0a74da;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .skills li {
+      background-color: #0a74da;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .project-item {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .project-item h4 {
+      margin-bottom: 10px;
+      color: #0a74da;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      padding: 12px;
+      background-color: #0a74da;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact .social-icons a {
+      color: #0a74da;
+      font-size: 1.6rem;
+      margin: 0 10px;
+    }
+
+    .contact .social-icons a:hover {
+      color: #333;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: var(--light-accent);
-      color: var(--accent);
-    }
-
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(15px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 26px;
-      }
-
-      header img {
-        width: 100px;
-        height: 100px;
-      }
+      padding: 15px 0;
+      background-color: #0a74da;
+      color: white;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
-  <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<header>
+  <h1>Zaid Vahora</h1>
+  <img
+    src="images/zaid.png"
+    alt="Zaid Vahora"
+    class="profile-img"
+  />
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <header>
-    <img src="zaid-profile.png" alt="Zaid Vahora">
-    <h1>Zaid Vahora</h1>
-    <p>Fresher | Web Developer | Java & Python Enthusiast</p>
-  </header>
+<div class="container">
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I am a BCA graduate passionate about web development. I enjoy creating websites and learning both frontend and backend technologies to become a full stack developer.</p>
-    </section>
+  <section id="about" class="intro">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am a fresher passionate about web development and programming. During my final year at college, I developed projects to strengthen my skills in full-stack development and problem-solving. I am eager to grow and contribute to real-world software projects.
+    </p>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java</li>
-        <li>Python</li>
-      </ul>
-    </section>
+  <section id="skills" class="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Trip Planning and Booking System</strong> – A project to plan and book travel with features for selecting destinations, dates, and booking options.</li>
-      </ul>
-    </section>
+  <section id="projects" class="projects">
+    <h3>Projects</h3>
 
-    <section>
-      <h2>Contact</h2>
-      <div class="contact-form">
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+    <div class="project-item">
+      <h4>Trip Planning & Booking System</h4>
+      <p>
+        Final year college project built using ASP.NET MVC. It enables users to plan trips, view destinations, and book travel packages. Features include login, package details, and booking forms.
+      </p>
+    </div>
 
-      <!-- Social Icons -->
+    <div class="project-item">
+      <h4>Portfolio Website</h4>
+      <p>
+        A responsive personal website created to showcase my skills and college projects using HTML, CSS, and JavaScript.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+
+      <!-- Social icons below send button -->
       <div class="social-icons">
-        <a href="https://github.com/Zaid786-dev" target="_blank" aria-label="GitHub Profile">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/zaid-vahora-a6a415292/" target="_blank" aria-label="LinkedIn Profile">
+        <a href="https://www.linkedin.com/in/zaid-vahora78" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
+        <a href="https://github.com/zaid786-dev" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
-    </section>
-  </main>
+    </form>
+  </section>
 
-  <footer>
-    &copy; 2025 Zaid Vahora. All rights reserved.
-  </footer>
+</div>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
+<footer>
+  &copy; 2025 Zaid Vahora. All rights reserved.
+</footer>
 
 </body>
 </html>
